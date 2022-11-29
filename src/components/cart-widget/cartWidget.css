@@ -1,0 +1,17 @@
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.logo img{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.contador {
+    top: 22%;
+    right: 39%;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+}
