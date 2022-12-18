@@ -1,5 +1,11 @@
 .App {
+  background-color: #212529;
   text-align: center;
+  min-height: 945px;
+}
+
+.item-list{
+  display: flex;
 }
 
 .App-logo {

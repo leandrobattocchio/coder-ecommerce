@@ -1,0 +1,37 @@
+.juego{
+    margin-top: 65px;
+    color: #ffff;
+}
+
+.juego h1{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+}
+
+.juego h2{
+    margin-top: 50px;
+}
+
+.juego img{
+    min-width: 350px;
+    min-height: 500px;
+    max-width: 350px;
+    max-height: 500px;
+}
+
+
+
+@media (min-width: 600px) {
+    .juego p{
+        margin-left: 160px;
+        margin-right: 160px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 600px) {
+    .juego{
+        min-height: 1000px;
+    }
+}

@@ -1,29 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import ItemListContainer from './components/item-list-container/ItemListContainer';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ItemDetailConteiner } from './components/item-detail-container/ItemDetailConteiner';
+import { useGames } from './hooks/useGames';
 
 function App() {
+
+  const games = useGames()
+
   return (
     <div className="App">
-      <Navbar />
-      <ItemListContainer greeting='Leandro'>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </ItemListContainer>
+     <BrowserRouter> 
+        <Navbar />
+       <div className='juegos'>
+         <Routes>
+            <Route path='/' element={<ItemListContainer games={games}/>}/>
+            <Route path='/category/:categoryId' element={<ItemListContainer games={games}/>}/>
+            <Route path='/item/:itemId' element={<ItemDetailConteiner games={games}/>}/>
+          </Routes>
+        </div> 
+      </BrowserRouter>
     </div>
   );
 }
