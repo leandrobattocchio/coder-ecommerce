@@ -1,3 +1,22 @@
+.hud{
+    display: flex;
+    margin-left: 48.5%;
+}
+
+.hud button{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.compras{
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.descripcion{
+  margin-top: 15px !important;
+}
+
 .juego{
     margin-top: 65px;
     color: #ffff;

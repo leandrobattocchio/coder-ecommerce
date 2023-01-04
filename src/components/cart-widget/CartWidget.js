@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './cartWidget.css'
-import carrito from '../../images/carrito.png'
+import carritoImg from '../../images/carrito.png'
+import { CarritoContext } from '../../context/CarritoContextProvider'
 
 const CartWidget = () => {
 
-  const contador = 9
-
-
-
+  const {carrito} = useContext(CarritoContext)
   return (
     <div className='logo'>
-      <img src={carrito} alt='carrito'/>
+      <img src={carritoImg} alt='carrito'/>
       <div className='contador'>
-        {contador}
+        {carrito}
       </div>
     </div>
   )
