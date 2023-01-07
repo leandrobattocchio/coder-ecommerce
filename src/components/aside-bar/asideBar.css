@@ -1,0 +1,13 @@
+.nav-item a{
+    color: black;
+}
+
+.colapsado{
+    padding-left: 4vh !important;
+}
+
+@media (max-width: 600px) {
+    .aside-bar{
+        display: none;
+    }
+}

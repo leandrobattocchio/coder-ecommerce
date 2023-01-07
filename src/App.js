@@ -4,24 +4,31 @@ import ItemListContainer from './components/item-list-container/ItemListContaine
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ItemDetailConteiner } from './components/item-detail-container/ItemDetailConteiner';
 import { CarritoContextProvider } from './context/CarritoContextProvider';
+import Footer from './components/footer/Footer';
+import Error from './components/error/Error';
+import Login from './components/login/Login'
+import AsideBar from './components/aside-bar/AsideBar';
 
 function App() {
 
   return (
-    <div className="App">
-     <BrowserRouter> 
+    <BrowserRouter>
       <CarritoContextProvider>
         <Navbar />
-        <div className='juegos'>
+        <div className="parent" style={{ padding: '10vh' }}>
+            <AsideBar />
           <Routes>
-              <Route path='/' element={<ItemListContainer />}/>
-              <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-              <Route path='/item/:gameId' element={<ItemDetailConteiner/>}/>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/item/:gameId' element={<ItemDetailConteiner />} />
+            <Route path='*' element={<Error />} />
           </Routes>
-        </div> 
-      </CarritoContextProvider> 
+        </div>
+        <Footer />
+      </CarritoContextProvider>
     </BrowserRouter>
-    </div>
+
   );
 }
 

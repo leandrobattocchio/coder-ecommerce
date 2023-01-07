@@ -1,56 +1,18 @@
-.hud{
-    display: flex;
-    margin-left: 48.5%;
+.section-game{
+    min-height: 100vh;
+    grid-column: 2 / 3;
 }
-
-.hud button{
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
 .compras{
-    margin-right: 15px;
-    margin-top: 15px;
+    color: rgb(1, 1, 1);
 }
 
-.descripcion{
-  margin-top: 15px !important;
+.section-game h3, h1, h2, p{
+    color: rgb(0, 0, 0);
 }
 
-.juego{
-    margin-top: 65px;
-    color: #ffff;
+.left-side{
+    width: 20vh;
+    min-width: 15vh;
+    grid-column: 1 / 2;
 }
 
-.juego h1{
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 50px;
-}
-
-.juego h2{
-    margin-top: 50px;
-}
-
-.juego img{
-    min-width: 350px;
-    min-height: 500px;
-    max-width: 350px;
-    max-height: 500px;
-}
-
-
-
-@media (min-width: 600px) {
-    .juego p{
-        margin-left: 160px;
-        margin-right: 160px;
-        font-weight: 700;
-    }
-}
-
-@media (max-width: 600px) {
-    .juego{
-        min-height: 1000px;
-    }
-}

@@ -1,5 +1,5 @@
 import { db } from '../firebase'
-import { collection, documentId, getDocs, query, where } from 'firebase/firestore'
+import { collection, documentId, getDocs, query, where, updateDoc, doc } from 'firebase/firestore'
 
 
 export const getAllGames = async () => {
@@ -29,5 +29,15 @@ export const findById = async (gameId) => {
         where(documentId(), "==", gameId)
     )
     const snapshot = await getDocs(queryFilter)
-    return snapshot.docs[0].data()
+   
+    if(snapshot.docs.length === 0) return null
+    return ({
+        id: snapshot.docs[0].id,
+        ...snapshot.docs[0].data()
+    })
+}
+
+export const updateGame = async (game, compra) => {
+  const orderDoc = doc(db, 'games', game.id)
+  updateDoc(orderDoc, {stash: game.stash - compra})
 }

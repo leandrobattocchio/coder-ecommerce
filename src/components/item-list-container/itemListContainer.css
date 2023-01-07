@@ -1,20 +1,16 @@
-.col img{
-    min-width: 350px;
-    min-height: 500px;
-    max-width: 350px;
-    max-height: 500px;
+.card img{
+    width: 100%;
+    height: 445px;
 }
 
-.col h1{
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    color: #ffff;
+.left-side{
+    padding-top: 2vh;
+    min-width: 15vh;
+    grid-column: 1 / 2;
 }
 
-.col a{
-    text-decoration: none;
-}
 
-.album{
-    margin-top: 30px;
+.section-main{
+    min-height: 100vh;
+    grid-column: 2 / 3;
 }
