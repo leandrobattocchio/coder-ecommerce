@@ -6,8 +6,8 @@ import { ItemDetailConteiner } from './components/item-detail-container/ItemDeta
 import { CarritoContextProvider } from './context/CarritoContextProvider';
 import Footer from './components/footer/Footer';
 import Error from './components/error/Error';
-import Login from './components/login/Login'
 import AsideBar from './components/aside-bar/AsideBar';
+import Authentication from './components/authentication/Authentication';
 
 function App() {
 
@@ -15,11 +15,11 @@ function App() {
     <BrowserRouter>
       <CarritoContextProvider>
         <Navbar />
-        <div className="parent" style={{ padding: '10vh' }}>
+        <div className="parent">
             <AsideBar />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/authentication' element={<Authentication />} />
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/item/:gameId' element={<ItemDetailConteiner />} />
             <Route path='*' element={<Error />} />

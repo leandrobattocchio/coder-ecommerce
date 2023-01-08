@@ -27,8 +27,8 @@ const Navbar = () => {
                 <div className="navbar-nav">
                     <div name='top' className="nav-item text-nowrap">
                         {logged
-                        ? <b onClick={handleLogout}>Logout</b>
-                        : <Link className="nav-link px-3" to={'/login'}>Sign out</Link>
+                        ? <button onClick={handleLogout} className='btn btn-secondary'>Logout</button>
+                        : <Link className="nav-link px-3" to={'/authentication'}>Sign in</Link>
                         }
                     </div>
                 </div>

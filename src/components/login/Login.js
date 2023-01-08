@@ -1,28 +1,15 @@
-import React, { useEffect, useContext } from 'react'
-import { useField } from '../../hooks/useField'
-import validator from 'validator'
-import Registro from '../registro/Registro'
-import useToggle from '../../hooks/useToggle'
+import React from 'react'
 import { auth } from '../../firebase'
 import { signInWithEmailAndPassword, browserLocalPersistence, setPersistence } from "firebase/auth";
-import {CarritoContext} from '../../context/CarritoContextProvider'
-import { useNavigate } from 'react-router-dom'
+import { useField } from '../../hooks/useField'
+import validator from 'validator'
+import './login.css'
+import joystick from '../../images/control.png'
 
 const Login = () => {
 
   const email = useField({ type: 'text' })
   const password = useField({ type: 'password' })
-  const { toggle, handleToggle } = useToggle()
-  const {logged} = useContext(CarritoContext)
-  const navigate = useNavigate()
-
-  useEffect(() => {
-    
-    if(logged) navigate('/')
-    
-  }, [logged, navigate])
-  
-
 
   const handleLogin = (e) => {
     e.preventDefault()
@@ -46,22 +33,20 @@ const Login = () => {
   }
 
   return (
-    <>
-      {toggle
-        ? <>
-          <form onSubmit={handleLogin}>
-            <input {...email} placeholder='Email..' required='required'></input>
-            <input {...password} placeholder='Password...' required='required'></input>
-            <button>Enviar</button>
-          </form>
-          <b onClick={handleToggle}>No tienes cuenta? Registrate!</b>
-        </>
-        : <>
-          <Registro />
-          <b onClick={handleToggle}>Ya tienes cuenta? Logueate!</b>
-        </>
-      }
-    </>
+    <div className='formulario' >
+      <img src={joystick} alt='nintendo' className='rounded mx-auto d-block'></img>
+      <form onSubmit={handleLogin} className='formulario'>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input {...email} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input {...password} class="form-control" id="exampleInputPassword1" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
   )
 }
 

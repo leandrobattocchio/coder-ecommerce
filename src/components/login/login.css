@@ -1,0 +1,23 @@
+
+@media (min-width: 600px) {
+    .formulario{
+        min-height: 35vh;
+    }
+    .formulario form{
+        margin: 2vh;
+    }
+    .formulario img{
+        max-width: 427px;
+        max-height: 283px;
+    }
+}
+
+@media (max-width: 790px) {
+   .formulario img{
+    display: none !important;
+   }
+   .formulario button{
+    text-align: center;
+   }
+
+}

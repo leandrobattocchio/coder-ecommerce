@@ -19,3 +19,9 @@
 .section-coral a{
     color: rgb(156, 153, 153) !important;
 }
+
+@media (min-width: 790px) {
+    .nav-item button{
+        margin-left: 15px;
+    }
+}

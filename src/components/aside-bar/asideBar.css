@@ -6,7 +6,7 @@
     padding-left: 4vh !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
     .aside-bar{
         display: none;
     }
