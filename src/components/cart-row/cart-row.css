@@ -1,0 +1,78 @@
+.img-carrito{
+    max-width: 125px;
+    min-width: 125px;
+    max-height: 145px;
+    min-height: 145px;
+    opacity: 0.8;
+}
+
+@media (max-width: 450px) {
+    .img-carrito{
+        max-width: 60px;
+        min-width: 60px;
+        max-height: 70px;
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 280px) {
+    .img-carrito{
+        max-width: 60px;
+        min-width: 60px;
+        max-height: 70px;
+        min-height: 70px;
+    }
+    .name-game{
+        font-size: 6px;
+    }
+    .cart-game-delete {
+        width: 25px;
+        height: 25px;
+        margin-left: 85%;
+    }
+}
+
+.carrito-img-contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.carrito-game-cantidad{
+    position: absolute;
+    text-align: center;
+    width: 32px;
+    height: 27px;
+    border-radius: 15px;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 43, 43);
+    color: rgb(227, 226, 226);
+}   
+
+.game-price-cart{
+    margin-left: 15px;
+    text-align: center;
+    font-size: 15px;
+    width: 65px;
+    background-color: rgb(41, 158, 41);
+    color: rgb(255, 255, 255);
+}
+
+.name-game strong{
+    padding-left: 15px;
+    margin-top: 31px;
+
+}
+
+.cart-game-delete {
+    text-align: right;
+}
+
+.cart-game-delete button{
+    background-color: rgb(217, 215, 215);
+    color: rgb(142, 136, 136);
+    width: 25px;
+    border: 0;
+    border-radius: 5px;
+}

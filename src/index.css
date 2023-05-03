@@ -1,0 +1,13 @@
+.parent{
+  background-image: url('./images/fondo.png') !important;
+  background-repeat: repeat;
+}
+
+body, html{
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

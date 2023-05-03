@@ -1,0 +1,35 @@
+.game-price{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 0; 
+    left: 12px; 
+    background-color: rgb(56, 141, 62); 
+    color: white;
+}
+
+.game-info{
+    background-color: rgb(25, 24, 24);
+}
+
+.game-info h1{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.game-info p{
+    color: rgb(132, 131, 131);
+}
+
+
+.game-detail-img{
+    width: 480px;
+    height: 360px;
+}
+
+@media (max-width: 280px) {
+    .game-detail-img{
+        height: 260px;
+    }
+}

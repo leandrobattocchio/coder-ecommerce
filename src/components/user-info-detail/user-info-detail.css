@@ -1,0 +1,33 @@
+.user-info-title{
+    grid-column: 2; 
+    text-align: center; 
+    font-size: 4vh; 
+    font-weight: bold; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.user-info-img{
+    grid-column: 2; 
+    margin: 0 auto;
+}
+
+#reset-password{
+    float: right;
+}
+
+
+@media (max-width: 500px) {
+    .user-info-detail-buttons button{
+        width: 69px;
+        height: 36px;
+        font-size: 9px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 280px) {
+    .user-info-detail-buttons button{
+        width: 55px;
+        height: 26px;
+    }
+}

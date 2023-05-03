@@ -1,0 +1,13 @@
+@media (max-width: 280px) {
+    .item-list-not-found-title{
+      font-size: 30px;
+    }
+}
+
+.item-list-not-found-title{
+    text-align: center;
+    font-family: 'Courier New'; 
+    font-weight: bold; 
+    color: rgb(165, 164, 164); 
+    margin-top: 50px;
+}

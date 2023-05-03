@@ -1,0 +1,13 @@
+.error-titulo{
+    grid-column: 2;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 6vh; 
+    padding: 4vh;
+}
+
+.error-img{
+    grid-column: 2; 
+    margin-left: auto; 
+    margin-right: auto;
+}

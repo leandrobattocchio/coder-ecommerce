@@ -1,0 +1,16 @@
+.company-logo img{
+    height: 65px;
+    width: 65px;
+}
+
+.login-buttons a{
+    height: 40px; 
+    margin-left: 2px;
+}
+
+@media (max-width: 280px) {
+    .company-logo img{
+        height: 40px;
+        width: 40px;
+    }
+}

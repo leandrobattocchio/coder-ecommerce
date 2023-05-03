@@ -1,0 +1,10 @@
+.footer{
+    background-color: rgb(246, 246, 246);
+    grid-column: 1 / 4;
+    min-height: 10vh;
+}
+
+.footer p{
+    color: rgb(160, 167, 167);
+}
+

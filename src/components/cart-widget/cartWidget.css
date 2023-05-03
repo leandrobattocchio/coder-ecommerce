@@ -1,0 +1,10 @@
+.carrito-icon img{
+    height: 33px;
+    width: 33px;
+}
+
+@media (max-width: 280px) {
+    .carrito-icon b{
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+
+.formulario form{
+     margin: 2vh;
+}
+.formulario img{
+    max-width: 427px;
+    max-height: 283px;
+}
+ .formulario{
+    min-height: 25vh;
+     grid-column: 2/4;
+}
+
+.question{
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.question a{
+    text-decoration: none;
+}
+
+@media (max-width: 790px){
+    .formulario img{
+        width: 290px;
+        height: 250px;
+    }
+    .formulario button{
+     text-align: center;
+    }
+    .formulario{
+     min-height: 46vh;
+    }
+}
+ 
+@media (max-width: 420px) {
+    .formulario img{
+       width: 200px;
+       height: 170px;
+    }
+}
+ 

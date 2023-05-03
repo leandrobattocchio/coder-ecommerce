@@ -1,0 +1,15 @@
+{
+  "short_name": "E-commerce",
+  "name": "E-commerce",
+  "icons": [
+    {
+      "src": "snes.ico",
+      "type": "image/ico",
+      "sizes": "42x42"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

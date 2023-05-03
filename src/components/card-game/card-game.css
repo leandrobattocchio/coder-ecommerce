@@ -1,0 +1,12 @@
+.game-stock{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0); 
+    padding: 5px;
+}
+
+@media (max-width: 280px) {
+    .game-card-list img{
+        height: 220px;
+        width: 155px;
+    }
+}

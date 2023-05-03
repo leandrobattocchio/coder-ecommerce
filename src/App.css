@@ -1,0 +1,12 @@
+.parent{
+  padding: 8vh;
+  min-height: 85vh;
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+@media (max-width: 600px) {
+  .parent{
+    min-height:68vh !important;
+  }
+}
