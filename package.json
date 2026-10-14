@@ -56,5 +56,8 @@
       "MESSAGE_SENDER_ID",
       "APP_ID"
     ]
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
